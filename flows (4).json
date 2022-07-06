@@ -1,0 +1,2198 @@
+[
+    {
+        "id": "da4c2b5c7c4912d1",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f73aa68e062a7555",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d217430751dc972b",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e6cf01ada7e10f14",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4aed329adc464cdb",
+        "type": "mqtt-broker",
+        "name": "port1883test1",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "tls": "0daa6a89e8fccc23",
+        "clientid": "noderedHERE",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "500",
+        "cleansession": true,
+        "birthTopic": "BoT/status",
+        "birthQos": "0",
+        "birthPayload": "\"NODERED STATUS: CONNECTED\"",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "BoT/status",
+        "willQos": "0",
+        "willPayload": "\"NODERED STATUS: DISCONECTION\"",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c38f9523b1cbe558",
+        "type": "ui_tab",
+        "name": "Blockchain Of Things",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "644b8eda281b8dc1",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "e65279940783273b",
+        "type": "ui_group",
+        "name": "IoT 3 . MOLINO",
+        "tab": "c38f9523b1cbe558",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "835aa011bade91d4",
+        "type": "ui_group",
+        "name": "IoT 0 - DESPULPADORA",
+        "tab": "c38f9523b1cbe558",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "bc1ade745395ade2",
+        "type": "ui_group",
+        "name": "IoT 1 - TRILLADORA",
+        "tab": "c38f9523b1cbe558",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "41f8764941880558",
+        "type": "ui_group",
+        "name": "IoT 2 - TORREFACTOR",
+        "tab": "c38f9523b1cbe558",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "4d6e74fccf2a740e",
+        "type": "mqtt-broker",
+        "d": true,
+        "name": "2test1884",
+        "broker": "localhost",
+        "port": "1884",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f9c4438b998c2983",
+        "type": "ui_tab",
+        "name": "LOGIN",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b6169f87dff3b6a0",
+        "type": "ui_group",
+        "name": "Insertar credenciales",
+        "tab": "f9c4438b998c2983",
+        "order": 1,
+        "disp": true,
+        "width": "9",
+        "collapse": false
+    },
+    {
+        "id": "eee3982dfb20f03b",
+        "type": "ui_spacer",
+        "z": "f73aa68e062a7555",
+        "name": "spacer",
+        "group": "b6169f87dff3b6a0",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "6458a823e1bc684b",
+        "type": "ui_spacer",
+        "z": "f73aa68e062a7555",
+        "name": "spacer",
+        "group": "b6169f87dff3b6a0",
+        "order": 4,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "93c872f8539e7a6a",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "c38f9523b1cbe558",
+        "order": 1,
+        "disp": false,
+        "width": "3",
+        "collapse": false
+    },
+    {
+        "id": "0daa6a89e8fccc23",
+        "type": "tls-config",
+        "name": "v1.0",
+        "cert": "/etc/mosquitto/ca_certificates/client.crt",
+        "key": "/etc/mosquitto/ca_certificates/client.key",
+        "ca": "/etc/mosquitto/ca_certificates/ca.crt",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "ps42",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "64b872e0a2c75e75",
+        "type": "mqtt-broker",
+        "name": "auxiliar default",
+        "broker": "192.168.1.210",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "76e93198796acd9e",
+        "type": "ui_spacer",
+        "z": "f73aa68e062a7555",
+        "name": "spacer",
+        "group": "93c872f8539e7a6a",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2f7b26ece8db470d",
+        "type": "mqtt in",
+        "z": "da4c2b5c7c4912d1",
+        "d": true,
+        "name": "",
+        "topic": "BoT/block",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "4aed329adc464cdb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 660,
+        "wires": [
+            [
+                "1b9b4c94c148ca0c",
+                "35603e51a565e7ac"
+            ]
+        ]
+    },
+    {
+        "id": "2d098a1a75682075",
+        "type": "comment",
+        "z": "da4c2b5c7c4912d1",
+        "name": "",
+        "info": " verifica los blocks y los escribe en disco",
+        "x": 100,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "1b9b4c94c148ca0c",
+        "type": "debug",
+        "z": "da4c2b5c7c4912d1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 250,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "c9e8d7f151cd0c1e",
+        "type": "function",
+        "z": "da4c2b5c7c4912d1",
+        "name": "block buffer & check",
+        "func": "\nfunction getFirstEmpty(list){\n    for(let i = 0; i < list.length; i++){\n        if(list[i] == 0){\n            return i;\n        }\n    }\n    return null;\n}\n\nfunction verificarBloque(list){\n    const aux = list[0];\n    for(let i = 0; i < list.length; i++){\n        if(list[i] != aux){\n            return false;\n        }\n    }\n    return true;\n}\n\nlet index = getFirstEmpty(flow.get('iotBlocks'));\nflow.get('iotBlocks')[index] = msg.payload;\n\nif(verificarBloque(flow.get('iotBlocks'))){\n    msg.payload = flow.get('iotBlocks')[0];\n    flow.set('iotBlocks',[0,0,0,0]);\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n//vigilar esto, que no lo haga cada vez que recibe un candidato de bloque que si no se jode la comprobacion\n\nlet emptyList = [0,0,0,0];\n\nif (!flow.get('iotBlocks')){\n    flow.set('iotBlocks', emptyList);\n}\n\n",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 660,
+        "wires": [
+            [
+                "ceeb80d40ed72120"
+            ]
+        ]
+    },
+    {
+        "id": "ceeb80d40ed72120",
+        "type": "function",
+        "z": "da4c2b5c7c4912d1",
+        "name": "buffer reset",
+        "func": "// vacío la lista que ya se ha validado\nlet emptyList = [0,0,0,0];\nflow.set('iotBlocks', emptyList);\n\n// mando por msg el bloque \nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 660,
+        "wires": [
+            [
+                "fcfebfd71697de62",
+                "00f503e2a76ce0e3"
+            ]
+        ]
+    },
+    {
+        "id": "062908357c8621a5",
+        "type": "debug",
+        "z": "da4c2b5c7c4912d1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "fcfebfd71697de62",
+        "type": "debug",
+        "z": "da4c2b5c7c4912d1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "35603e51a565e7ac",
+        "type": "python3-function",
+        "z": "da4c2b5c7c4912d1",
+        "name": "read new block",
+        "func": "import json\nimport os\n\nos.chdir('/home/miguel/blockchain/')\n\nfile = open('blockchain.txt','r')\nblockchainString = file.read()\nfile.close()\n\nif blockchainString == '':\n    aux = {\"blockchain\":[{\"id\":0}]}\n    blockchainDict = json.loads(aux)\nelse:\n    blockchainDict = json.loads(blockchainString)\n\nintid = len(blockchainDict[\"blockchain\"])\n\nincoming = json.loads(msg[\"payload\"].replace(\"'\", '\"'))\n\nnewBlock = {\"id\": intid, \"payload\": incoming['block'], \"hash\": incoming[\"hash\"]}\n\nmsg = {'payload' : newBlock}\n\nreturn msg",
+        "outputs": 1,
+        "x": 300,
+        "y": 660,
+        "wires": [
+            [
+                "c9e8d7f151cd0c1e",
+                "062908357c8621a5"
+            ]
+        ]
+    },
+    {
+        "id": "00f503e2a76ce0e3",
+        "type": "python3-function",
+        "z": "da4c2b5c7c4912d1",
+        "name": "block chainer",
+        "func": "import os\nimport json\n\nos.chdir('/home/miguel/blockchain/')\n\nfile = open('blockchain.txt','r')\nblockchainString = file.read()\nfile.close()\nblockchainDict = json.loads(blockchainString)\n\nblockList = blockchainDict[\"blockchain\"]\nblockList.append(msg['payload'])\nblockchainDict[\"blockchain\"] = blockList\n\nfile = open('blockchain.txt','w+')\nfile.write(json.dumps(blockchainDict))\nfile.close()\n\nreturn msg",
+        "outputs": 1,
+        "x": 970,
+        "y": 660,
+        "wires": [
+            [
+                "754593ecec88bfe0"
+            ]
+        ]
+    },
+    {
+        "id": "754593ecec88bfe0",
+        "type": "debug",
+        "z": "da4c2b5c7c4912d1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1210,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "ef694e4df648e05e",
+        "type": "comment",
+        "z": "da4c2b5c7c4912d1",
+        "name": "",
+        "info": "version de blockchain cifrao\n\nprimero: obtengo el bloque candidtato bien encapsuladito \n\nsegundo: almaceno en bufer y verifico en una var diferente a payload\n\nsi es correcto, descifro blockchain (se autoguarda en payload) y añado el id\n\n\ntercero: encadeno las vars \n\n",
+        "x": 140,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "dbbf0ee0dd5d7b79",
+        "type": "file in",
+        "z": "da4c2b5c7c4912d1",
+        "name": "read",
+        "filename": "/home/miguel/blockchain/blockchainCrypt",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 930,
+        "y": 1000,
+        "wires": [
+            [
+                "5355642fa164fe94"
+            ]
+        ]
+    },
+    {
+        "id": "5355642fa164fe94",
+        "type": "decrypt",
+        "z": "da4c2b5c7c4912d1",
+        "name": "",
+        "algorithm": "AES",
+        "key": "1234567890",
+        "x": 1080,
+        "y": 1000,
+        "wires": [
+            [
+                "1c986a8c5779a68d"
+            ]
+        ]
+    },
+    {
+        "id": "bc8cc2376de48b1b",
+        "type": "function",
+        "z": "da4c2b5c7c4912d1",
+        "name": "block chainer",
+        "func": "let intid = msg['payload']['blockchain'].length;\nmsg['confirmedBlock']['id'] = intid;\n\nmsg['payload']['blockchain'][intid] = msg['confirmedBlock'];\ndelete msg['confirmedBlock'];\nmsg['payload'] = JSON.stringify(msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1410,
+        "y": 1060,
+        "wires": [
+            [
+                "b8a1fa37212afb75",
+                "3dc088a327f80efe"
+            ]
+        ]
+    },
+    {
+        "id": "ebd65293ea1b4cec",
+        "type": "function",
+        "z": "da4c2b5c7c4912d1",
+        "name": "prepare",
+        "func": "msg['newPossibleBlock'] = msg['payload'];\ndelete msg['payload'];\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 1060,
+        "wires": [
+            [
+                "5c31b3f538eb3143"
+            ]
+        ]
+    },
+    {
+        "id": "5c31b3f538eb3143",
+        "type": "function",
+        "z": "da4c2b5c7c4912d1",
+        "name": "block buffer & check",
+        "func": "\nfunction getFirstEmpty(list){\n    for(let i = 0; i < list.length; i++){\n        if(list[i] == 0){\n            return i;\n        }\n    }\n    return null;\n}\n\nfunction verificarBloque(list){\n    const aux = list[0];\n    for(let i = 0; i < list.length; i++){\n        if(list[i] != aux){\n            return false;\n        }\n    }\n    return true;\n}\n\nlet index = getFirstEmpty(flow.get('iotBlocks'));\n\nif(index != null){\n    flow.get('iotBlocks')[index] = msg['newPossibleBlock']; \n}\n\n//if(verificarBloque(flow.get('iotBlocks'))){\n    msg['confirmedBlock'] = flow.get('iotBlocks')[0];\n    delete msg['newPossibleBlock'];\n    flow.set('iotBlocks',[0,0,0,0]);\n    return msg;\n//}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n//vigilar esto, que no lo haga cada vez que recibe un candidato de bloque que si no se jode la comprobacion\n\nlet emptyList = [0,0,0,0];\n\nif (!flow.get('iotBlocks')){\n    flow.set('iotBlocks', emptyList);\n}\n\n",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 1060,
+        "wires": [
+            [
+                "be91531f5715ddec"
+            ]
+        ]
+    },
+    {
+        "id": "b8a1fa37212afb75",
+        "type": "encrypt",
+        "z": "da4c2b5c7c4912d1",
+        "name": "",
+        "algorithm": "AES",
+        "key": "1234567890",
+        "x": 1620,
+        "y": 1060,
+        "wires": [
+            [
+                "1a0f49fdc7e62de8",
+                "ca8b4614967df023"
+            ]
+        ]
+    },
+    {
+        "id": "1a0f49fdc7e62de8",
+        "type": "file",
+        "z": "da4c2b5c7c4912d1",
+        "name": "write",
+        "filename": "/home/miguel/blockchain/blockchainCrypt",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1850,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ca8b4614967df023",
+        "type": "debug",
+        "z": "da4c2b5c7c4912d1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1790,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "1c986a8c5779a68d",
+        "type": "json",
+        "z": "da4c2b5c7c4912d1",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1230,
+        "y": 1000,
+        "wires": [
+            [
+                "bc8cc2376de48b1b"
+            ]
+        ]
+    },
+    {
+        "id": "3dc088a327f80efe",
+        "type": "debug",
+        "z": "da4c2b5c7c4912d1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1590,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "151449bce36131a9",
+        "type": "mqtt in",
+        "z": "da4c2b5c7c4912d1",
+        "name": "",
+        "topic": "BoT/block",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "4aed329adc464cdb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 60,
+        "y": 1060,
+        "wires": [
+            [
+                "5e8d2eb62ed871a3"
+            ]
+        ]
+    },
+    {
+        "id": "6a3fc8f94cde825f",
+        "type": "debug",
+        "z": "da4c2b5c7c4912d1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "5e8d2eb62ed871a3",
+        "type": "python3-function",
+        "z": "da4c2b5c7c4912d1",
+        "name": "",
+        "func": "import json\n\nincoming = json.loads(msg[\"payload\"].replace(\"'\", '\"'))\nmsg['payload'] = incoming\n\nreturn msg",
+        "outputs": 1,
+        "x": 320,
+        "y": 1060,
+        "wires": [
+            [
+                "6a3fc8f94cde825f",
+                "ebd65293ea1b4cec"
+            ]
+        ]
+    },
+    {
+        "id": "be91531f5715ddec",
+        "type": "debug",
+        "z": "da4c2b5c7c4912d1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "6928ef605bedd7b9",
+        "type": "file in",
+        "z": "f73aa68e062a7555",
+        "name": "read",
+        "filename": "/home/miguel/blockchain/blockchainCrypt",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 290,
+        "y": 380,
+        "wires": [
+            [
+                "1d5ee2733c41388b"
+            ]
+        ]
+    },
+    {
+        "id": "3c58b4ef0c68c2a7",
+        "type": "inject",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "6928ef605bedd7b9"
+            ]
+        ]
+    },
+    {
+        "id": "993eb2ac2d7ec840",
+        "type": "function",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "func": "const max = (msg.payload.blockchain.length) -1;\n\n\nmsgg = {\n    \"payload\" : msg.payload.blockchain[max]\n}\n\nreturn msgg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 380,
+        "wires": [
+            [
+                "b54ef4a009d22188",
+                "c9159cc54e2a92d3",
+                "4faa9dd747c02754",
+                "d1ec9058b6e38894"
+            ]
+        ]
+    },
+    {
+        "id": "b54ef4a009d22188",
+        "type": "debug",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "d1ec9058b6e38894",
+        "type": "function",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "func": "var msg1 = {};\nvar msg2 = {};\n\n\nmsg1.payload = msg.payload.payload[0].caudalAgua;\nmsg1.topic = 'Line1' ;\n\nmsg2.payload = msg.payload.payload[0].caudalCafe;\nmsg2.topic = 'Line2';\n\nreturn [msg1, msg2];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 40,
+        "wires": [
+            [
+                "9ddbd46a071f5b64"
+            ],
+            [
+                "9ddbd46a071f5b64"
+            ]
+        ]
+    },
+    {
+        "id": "196a36109e4cef1d",
+        "type": "ui_gauge",
+        "z": "f73aa68e062a7555",
+        "name": "temp",
+        "group": "41f8764941880558",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "HORNO",
+        "label": "Cº",
+        "format": "{{msg.payload.payload.2.temp}}",
+        "min": "170",
+        "max": "230",
+        "colors": [
+            "#dc2929",
+            "#00e604",
+            "#ca3838"
+        ],
+        "seg1": "190",
+        "seg2": "215",
+        "x": 1350,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "c9159cc54e2a92d3",
+        "type": "ui_gauge",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "group": "835aa011bade91d4",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "caudal de agua",
+        "label": "mL / s ",
+        "format": "{{msg.payload.payload[0].caudalAgua}}",
+        "min": "500",
+        "max": "1000",
+        "colors": [
+            "#db2929",
+            "#1dd332",
+            "#dc2929"
+        ],
+        "seg1": "600",
+        "seg2": "800",
+        "x": 1380,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ab7624dd53d55fe4",
+        "type": "ui_gauge",
+        "z": "f73aa68e062a7555",
+        "name": "temp",
+        "group": "bc1ade745395ade2",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "SECADORA",
+        "label": "Cº",
+        "format": "{{msg.payload.payload.1.temp}}",
+        "min": "80",
+        "max": "150",
+        "colors": [
+            "#ca3838",
+            "#00e60f",
+            "#ca3838"
+        ],
+        "seg1": "100",
+        "seg2": "140",
+        "x": 1370,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "9956b23530c6774a",
+        "type": "json",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 610,
+        "y": 380,
+        "wires": [
+            [
+                "993eb2ac2d7ec840"
+            ]
+        ]
+    },
+    {
+        "id": "1074757be47c9176",
+        "type": "ui_gauge",
+        "z": "f73aa68e062a7555",
+        "name": "cafe",
+        "group": "e65279940783273b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "MOLINO",
+        "label": "g",
+        "format": "{{msg.payload.payload.3.cafe}}",
+        "min": "300",
+        "max": "500",
+        "colors": [
+            "#dc2929",
+            "#1dd332",
+            "#ca3838"
+        ],
+        "seg1": "350",
+        "seg2": "450",
+        "x": 1350,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "9f5e5ad98bc90cc4",
+        "type": "ui_gauge",
+        "z": "f73aa68e062a7555",
+        "name": "azucar",
+        "group": "41f8764941880558",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "HORNO",
+        "label": "g/s",
+        "format": "{{msg.payload.payload.2.azucar}}",
+        "min": "20",
+        "max": "40",
+        "colors": [
+            "#dc2929",
+            "#00e604",
+            "#ca3838"
+        ],
+        "seg1": "28",
+        "seg2": "34",
+        "x": 1350,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "4faa9dd747c02754",
+        "type": "ui_gauge",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "group": "835aa011bade91d4",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "caudal de café",
+        "label": "gr / s",
+        "format": "{{msg.payload.payload[0].caudalCafe}}",
+        "min": "100",
+        "max": "200",
+        "colors": [
+            "#dc2929",
+            "#1dd332",
+            "#ca3838"
+        ],
+        "seg1": "120",
+        "seg2": "180",
+        "x": 1380,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ac9cbfd377e285f8",
+        "type": "ui_gauge",
+        "z": "f73aa68e062a7555",
+        "name": "revs",
+        "group": "bc1ade745395ade2",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "SECADORA",
+        "label": "revs",
+        "format": "{{msg.payload.payload.1.revs}}",
+        "min": "200",
+        "max": "300",
+        "colors": [
+            "#dc2929",
+            "#00e60f",
+            "#ca3838"
+        ],
+        "seg1": "220",
+        "seg2": "280",
+        "x": 1370,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "a76569221f98ec46",
+        "type": "ui_gauge",
+        "z": "f73aa68e062a7555",
+        "name": "revoluciones",
+        "group": "e65279940783273b",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "MOLINO",
+        "label": "revs",
+        "format": "{{msg.payload.payload.3.revs}}",
+        "min": "100",
+        "max": "150",
+        "colors": [
+            "#ca3838",
+            "#04e600",
+            "#ca3838"
+        ],
+        "seg1": "120",
+        "seg2": "135",
+        "x": 1370,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "b31df763721e1ae2",
+        "type": "ui_chart",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "group": "bc1ade745395ade2",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "no data yet",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1370,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "61f23daa7430f280",
+        "type": "ui_chart",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "group": "41f8764941880558",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "no data yet",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1350,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ddbd46a071f5b64",
+        "type": "ui_chart",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "group": "835aa011bade91d4",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "no data yet",
+        "dot": false,
+        "ymin": "80",
+        "ymax": "120",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1350,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "40d3707808501395",
+        "type": "ui_chart",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "group": "e65279940783273b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "no data yet",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1350,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd7ab9d3efec07da",
+        "type": "mqtt in",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "topic": "BoT/iot/0/status",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "4aed329adc464cdb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1620,
+        "y": 100,
+        "wires": [
+            [
+                "c660c0e7bb69c6a2"
+            ]
+        ]
+    },
+    {
+        "id": "c660c0e7bb69c6a2",
+        "type": "ui_text",
+        "z": "f73aa68e062a7555",
+        "group": "835aa011bade91d4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "STATUS: ",
+        "format": "{{msg.payload}} ",
+        "layout": "col-center",
+        "x": 1820,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "cc1e52238205718f",
+        "type": "mqtt in",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "topic": "BoT/iot/1/status",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "4aed329adc464cdb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1620,
+        "y": 260,
+        "wires": [
+            [
+                "326b3d966c2ced1c"
+            ]
+        ]
+    },
+    {
+        "id": "326b3d966c2ced1c",
+        "type": "ui_text",
+        "z": "f73aa68e062a7555",
+        "group": "bc1ade745395ade2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "STATUS: ",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 1820,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e5c0997cab3d67c3",
+        "type": "mqtt in",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "topic": "BoT/iot/2/status",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "4aed329adc464cdb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1620,
+        "y": 420,
+        "wires": [
+            [
+                "f70c835348bc5eb4"
+            ]
+        ]
+    },
+    {
+        "id": "f70c835348bc5eb4",
+        "type": "ui_text",
+        "z": "f73aa68e062a7555",
+        "group": "41f8764941880558",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "STATUS: ",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 1820,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "3e1906ad432c389c",
+        "type": "mqtt in",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "topic": "BoT/iot/3/status",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "4aed329adc464cdb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1620,
+        "y": 640,
+        "wires": [
+            [
+                "97458c3dff314546"
+            ]
+        ]
+    },
+    {
+        "id": "97458c3dff314546",
+        "type": "ui_text",
+        "z": "f73aa68e062a7555",
+        "group": "e65279940783273b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "STATUS: ",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 1820,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "750720807948a9b4",
+        "type": "ui_switch",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "label": "RECORD?",
+        "tooltip": "",
+        "group": "93c872f8539e7a6a",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "x": 370,
+        "y": 620,
+        "wires": [
+            [
+                "a2befefd44dfa074"
+            ]
+        ]
+    },
+    {
+        "id": "a2befefd44dfa074",
+        "type": "function",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "func": "global.set('switch', msg.topic);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set('switch', true);",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1d5ee2733c41388b",
+        "type": "decrypt",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "algorithm": "AES",
+        "key": "1234567890",
+        "x": 440,
+        "y": 380,
+        "wires": [
+            [
+                "9956b23530c6774a"
+            ]
+        ]
+    },
+    {
+        "id": "a7f7f1a2c8f9dc55",
+        "type": "comment",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "info": "que inyecte timestamp de forma periodica",
+        "x": 120,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "3132e435dc2127b4",
+        "type": "function",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "func": "var msg1 = {};\nvar msg2 = {};\n\n\nmsg1.payload = msg.payload.payload[1].temp;\nmsg1.topic = 'Line1' ;\n\nmsg2.payload = msg.payload.payload[1].revs;\nmsg2.topic = 'Line2';\n\nreturn [msg1, msg2];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 220,
+        "wires": [
+            [
+                "b31df763721e1ae2"
+            ],
+            [
+                "b31df763721e1ae2"
+            ]
+        ]
+    },
+    {
+        "id": "75751864bb77b9bf",
+        "type": "function",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "func": "var msg1 = {};\nvar msg2 = {};\n\n\nmsg1.payload = msg.payload.payload[2].temp;\nmsg1.topic = 'Line1' ;\n\nmsg2.payload = msg.payload.payload[2].azucar;\nmsg2.topic = 'Line2';\n\nreturn [msg1, msg2];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 480,
+        "wires": [
+            [
+                "61f23daa7430f280"
+            ],
+            [
+                "61f23daa7430f280"
+            ]
+        ]
+    },
+    {
+        "id": "11c410687db6b521",
+        "type": "function",
+        "z": "f73aa68e062a7555",
+        "name": "",
+        "func": "var msg1 = {};\nvar msg2 = {};\n\n\nmsg1.payload = msg.payload.payload[3].revs;\nmsg1.topic = 'Line1' ;\n\nmsg2.payload = msg.payload.payload[3].cafe;\nmsg2.topic = 'Line2';\n\nreturn [msg1, msg2];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 700,
+        "wires": [
+            [
+                "40d3707808501395"
+            ],
+            [
+                "40d3707808501395"
+            ]
+        ]
+    },
+    {
+        "id": "15e461f20d467b5c",
+        "type": "ui_form",
+        "z": "d217430751dc972b",
+        "name": "",
+        "label": "",
+        "group": "b6169f87dff3b6a0",
+        "order": 3,
+        "width": "9",
+        "height": "4",
+        "options": [
+            {
+                "label": "Username",
+                "value": "user",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Password",
+                "value": "pass",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "user": "",
+            "pass": ""
+        },
+        "payload": "",
+        "submit": "enviar",
+        "cancel": "cancelar",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "38432b2fd7995ba6",
+                "c74af1f0f62a0663"
+            ]
+        ]
+    },
+    {
+        "id": "3d17cd619bca9305",
+        "type": "inject",
+        "z": "d217430751dc972b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 280,
+        "wires": [
+            [
+                "15e461f20d467b5c"
+            ]
+        ]
+    },
+    {
+        "id": "38432b2fd7995ba6",
+        "type": "function",
+        "z": "d217430751dc972b",
+        "name": "",
+        "func": "\nlet string = msg.payload.user;\nlet string2 = msg.payload.pass;\n\nlet res = string + string2;\nmsg.payload = res;\n\nflow.set(\"test\",res)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 280,
+        "wires": [
+            [
+                "10d2d4c158e035a7"
+            ]
+        ]
+    },
+    {
+        "id": "10d2d4c158e035a7",
+        "type": "debug",
+        "z": "d217430751dc972b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c74af1f0f62a0663",
+        "type": "debug",
+        "z": "d217430751dc972b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "0c36a2a21f3e5775",
+        "type": "decrypt",
+        "z": "d217430751dc972b",
+        "name": "",
+        "algorithm": "AES",
+        "key": "secr1t!",
+        "x": 760,
+        "y": 440,
+        "wires": [
+            [
+                "e6e52dd8a7de7bbc",
+                "51f404d2afcacfc0"
+            ]
+        ]
+    },
+    {
+        "id": "7707ea7511c4f388",
+        "type": "file in",
+        "z": "d217430751dc972b",
+        "name": "",
+        "filename": "/home/miguel/blockchain/NodeCreds.txt",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 420,
+        "y": 440,
+        "wires": [
+            [
+                "0c36a2a21f3e5775",
+                "bd5b10f1c584bf34"
+            ]
+        ]
+    },
+    {
+        "id": "bd5b10f1c584bf34",
+        "type": "debug",
+        "z": "d217430751dc972b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "e6e52dd8a7de7bbc",
+        "type": "debug",
+        "z": "d217430751dc972b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "51f404d2afcacfc0",
+        "type": "function",
+        "z": "d217430751dc972b",
+        "name": "",
+        "func": "\nif (msg.payload == flow.get(\"test\")){\n    return {'payload':'True'};\n    \n}else{\n    return {'payload':'False'};\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 440,
+        "wires": [
+            [
+                "a8a14f818dd84c49",
+                "aefc6d9db8bee5b8",
+                "d5ed4a08a95b115d"
+            ]
+        ]
+    },
+    {
+        "id": "6f93eceb81fce237",
+        "type": "complete",
+        "z": "d217430751dc972b",
+        "name": "",
+        "scope": [
+            "10d2d4c158e035a7"
+        ],
+        "uncaught": false,
+        "x": 110,
+        "y": 440,
+        "wires": [
+            [
+                "7707ea7511c4f388"
+            ]
+        ]
+    },
+    {
+        "id": "a8a14f818dd84c49",
+        "type": "debug",
+        "z": "d217430751dc972b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1150,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "0446d2456ced1d90",
+        "type": "comment",
+        "z": "d217430751dc972b",
+        "name": "",
+        "info": "obtine los creds del form y los mete en una variable de alcance flow\n\ncuando se ha seteado, se descifra el creds.txt y se comparan. la solucion es True o False",
+        "x": 100,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "9271ba9704bad012",
+        "type": "ui_text",
+        "z": "d217430751dc972b",
+        "group": "b6169f87dff3b6a0",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "console",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 1380,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "aefc6d9db8bee5b8",
+        "type": "function",
+        "z": "d217430751dc972b",
+        "name": "",
+        "func": "if(msg.payload == \"True\"){\n    msg.payload=\"Validado!\"\n}else{\n    msg.payload = \"No válido, reintentar\"\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n\nreturn {\"payload\" : \"\"};",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 340,
+        "wires": [
+            [
+                "9271ba9704bad012"
+            ]
+        ]
+    },
+    {
+        "id": "d5ed4a08a95b115d",
+        "type": "function",
+        "z": "d217430751dc972b",
+        "name": "",
+        "func": "if(msg.payload == \"True\"){\n    global.set('switch', true);\n    msg.payload = {\"tab\":\"1\"};\n    return msg;\n}else{\n    msg.payload = {\"tab\": \"LOGIN\"};\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 440,
+        "wires": [
+            [
+                "5fdb3be8282b09fe",
+                "0d8920e9e0733e68"
+            ]
+        ]
+    },
+    {
+        "id": "d2ff7749afc58729",
+        "type": "ui_ui_control",
+        "z": "d217430751dc972b",
+        "name": "",
+        "events": "change",
+        "x": 1660,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5fdb3be8282b09fe",
+        "type": "debug",
+        "z": "d217430751dc972b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1470,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "0d8920e9e0733e68",
+        "type": "delay",
+        "z": "d217430751dc972b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1500,
+        "y": 440,
+        "wires": [
+            [
+                "d2ff7749afc58729"
+            ]
+        ]
+    },
+    {
+        "id": "c5d60f6a48beb770",
+        "type": "inject",
+        "z": "e6cf01ada7e10f14",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 640,
+        "wires": [
+            [
+                "264cbe5cec7875dd"
+            ]
+        ]
+    },
+    {
+        "id": "8ef3530207afb4f4",
+        "type": "file in",
+        "z": "e6cf01ada7e10f14",
+        "name": "",
+        "filename": "/home/miguel/blockchain/blockchain",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 470,
+        "y": 220,
+        "wires": [
+            [
+                "754f7d71d8335d64",
+                "ea9ed5ae95768caa"
+            ]
+        ]
+    },
+    {
+        "id": "754f7d71d8335d64",
+        "type": "encrypt",
+        "z": "e6cf01ada7e10f14",
+        "name": "",
+        "algorithm": "AES",
+        "key": "1234567890",
+        "x": 760,
+        "y": 280,
+        "wires": [
+            [
+                "6fd00d3678995072",
+                "a8451aab24b3df16"
+            ]
+        ]
+    },
+    {
+        "id": "6fd00d3678995072",
+        "type": "file",
+        "z": "e6cf01ada7e10f14",
+        "name": "",
+        "filename": "/home/miguel/blockchain/blockchainCrypt",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1060,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea9ed5ae95768caa",
+        "type": "debug",
+        "z": "e6cf01ada7e10f14",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "a8451aab24b3df16",
+        "type": "debug",
+        "z": "e6cf01ada7e10f14",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "365a7605b4ec6784",
+        "type": "file in",
+        "z": "e6cf01ada7e10f14",
+        "name": "",
+        "filename": "/home/miguel/blockchain/blockchain",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 810,
+        "y": 640,
+        "wires": [
+            [
+                "59303d512f187ac8"
+            ]
+        ]
+    },
+    {
+        "id": "2517c00be0610f65",
+        "type": "json",
+        "z": "e6cf01ada7e10f14",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1290,
+        "y": 640,
+        "wires": [
+            [
+                "258fb148be43e838",
+                "dd488bf836ac7ce6"
+            ]
+        ]
+    },
+    {
+        "id": "59303d512f187ac8",
+        "type": "decrypt",
+        "z": "e6cf01ada7e10f14",
+        "name": "",
+        "algorithm": "AES",
+        "key": "1234567890",
+        "x": 1120,
+        "y": 640,
+        "wires": [
+            [
+                "2517c00be0610f65"
+            ]
+        ]
+    },
+    {
+        "id": "258fb148be43e838",
+        "type": "debug",
+        "z": "e6cf01ada7e10f14",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1450,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "039adcdbd5a38bb0",
+        "type": "inject",
+        "z": "e6cf01ada7e10f14",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 240,
+        "wires": [
+            [
+                "8ef3530207afb4f4"
+            ]
+        ]
+    },
+    {
+        "id": "bdbc11119e923d41",
+        "type": "comment",
+        "z": "e6cf01ada7e10f14",
+        "name": "",
+        "info": "CIFRADORA",
+        "x": 200,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "f05d098d28875cef",
+        "type": "comment",
+        "z": "e6cf01ada7e10f14",
+        "name": "",
+        "info": "DESCIFRADORA",
+        "x": 140,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "264cbe5cec7875dd",
+        "type": "function",
+        "z": "e6cf01ada7e10f14",
+        "name": "",
+        "func": "msg['smeen'] = msg['payload'];\ndelete msg['payload'];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 640,
+        "wires": [
+            [
+                "365a7605b4ec6784",
+                "ee30d0a7b479bd90"
+            ]
+        ]
+    },
+    {
+        "id": "ee30d0a7b479bd90",
+        "type": "debug",
+        "z": "e6cf01ada7e10f14",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "dd488bf836ac7ce6",
+        "type": "file",
+        "z": "e6cf01ada7e10f14",
+        "name": "write blockchain",
+        "filename": "/home/miguel/blockchain/blockchain",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1500,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    }
+]
